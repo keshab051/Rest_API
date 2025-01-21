@@ -12,3 +12,4 @@ class Moviedata(models.Model):
     rating = models.FloatField()
     # field to catgorize the movie type
     typ = models.CharField(max_length=200,default='action')
+    image = models.ImageField(upload_to='Images/',default="Images/None/Noimg.jpg")
