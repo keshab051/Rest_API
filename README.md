@@ -1,14 +1,8 @@
 difference between normal url and the urls made using routers 
 '
-Excellent question, sir 👍
-This is a **very important concept** in Django & DRF.
+  router is very important concept in Django & DRF.
 
-Short answer first:
-
-👉 **YES, you absolutely can make APIs using simple URLs.
-Routers are NOT mandatory.**
-
-Now let’s understand **what simple URLs are**, **how they differ from routers**, and **when to use which**.
+ let’s understand **what simple URLs are**, **how they differ from routers**, and **when to use which**.
 
 ---
 
@@ -75,12 +69,9 @@ GET     /movies/{id}/
 PUT     /movies/{id}/
 DELETE  /movies/{id}/
 ```
-
-👉 All this with **ONE LINE**
-
 ---
 
-## 4️⃣ Key Differences: Simple URLs vs Routers
+## Key Differences: Simple URLs vs Routers
 
 | Feature           | Simple URLs           | Routers      |
 | ----------------- | --------------------- | ------------ |
@@ -93,9 +84,9 @@ DELETE  /movies/{id}/
 
 ---
 
-## 5️⃣ Can We Just Use Simple Endpoints for APIs?
+## Can We Just Use Simple Endpoints for APIs?
 
-### ✅ YES — and many projects do.
+### YES — and many projects do.
 
 ### Example Real Use-Cases:
 
@@ -114,7 +105,7 @@ Routers are **not ideal** here.
 
 ---
 
-## 6️⃣ When Routers Are Better
+## When Routers Are Better
 
 Use **routers** when:
 
@@ -134,7 +125,7 @@ Router saves a LOT of boilerplate.
 
 ---
 
-## 7️⃣ When Simple URLs Are Better
+## When Simple URLs Are Better
 
 Use **simple URLs** when:
 
@@ -145,7 +136,7 @@ Use **simple URLs** when:
 
 ---
 
-## 8️⃣ Mixing Both (BEST PRACTICE) ⭐
+## Mixing Both (BEST PRACTICE) 
 
 Most real-world projects do this:
 
@@ -163,7 +154,7 @@ urlpatterns = [
 
 ---
 
-## 9️⃣ Real-Life Analogy 🛣️
+##  Real-Life Analogy 🛣️
 
 * **Simple URLs** → You draw every road yourself
 * **Routers** → Government auto-plans city roads
@@ -171,7 +162,7 @@ urlpatterns = [
 
 ---
 
-## 🧠 Final Verdict
+##  Final Verdict
 
 ✔ You **can** build APIs using only simple URLs
 ✔ Routers are **convenience tools**, not rules
